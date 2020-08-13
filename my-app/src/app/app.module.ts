@@ -5,14 +5,16 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {TopBarComponent} from './top-bar/top-bar.component';
 import {ProductListComponent} from './product-list/product-list.component';
 import { AppComponent } from './app.component';
-import {ProductAlertsComponent} from './product-alert/product-alerts.component'
+import {ProductAlertsComponent} from './product-alert/product-alerts.component';
+import {ProductDetailsComponent} from './product-details/product-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopBarComponent,
     ProductListComponent,
-    ProductAlertsComponent
+    ProductAlertsComponent,
+    ProductDetailsComponent
     
   ],
   imports: [
@@ -20,6 +22,7 @@ import {ProductAlertsComponent} from './product-alert/product-alerts.component'
     ReactiveFormsModule,
     RouterModule.forRoot([
       {path: '', component: ProductListComponent},
+      {path: 'products/:productId',component: ProductDetailsComponent},
     ])
   ],
   providers: [],
