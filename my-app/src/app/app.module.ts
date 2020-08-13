@@ -5,12 +5,15 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {TopBarComponent} from './top-bar/top-bar.component';
 import {ProductListComponent} from './product-list/product-list.component';
 import { AppComponent } from './app.component';
+import {ProductAlertsComponent} from './product-alert/product-alerts.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     TopBarComponent,
-    ProductListComponent
+    ProductListComponent,
+    ProductAlertsComponent
+    
   ],
   imports: [
     BrowserModule,
